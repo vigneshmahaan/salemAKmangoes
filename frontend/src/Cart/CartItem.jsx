@@ -7,7 +7,7 @@ import {
   removeMessage,
 } from "../features/cart/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { Minus, Plus } from "lucide-react";
+
 
 function CartItem({ item }) {
   const { success, loading, error, message, cartItems } = useSelector(
@@ -83,7 +83,7 @@ const increaseQuantity = () => {
           <h3 className="item-name">{item.name}</h3>
           <p className="item-quantity">
             <strong>Price: ₹ </strong>
-            {item.price.toFixed(2)} per kg
+            {item.price} per kg
           </p>
           <p className="item-quantity">
             <strong>Quantity : </strong>
