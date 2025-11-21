@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --color-shop-light-pink: #fcf0e4;
+  --color-shop-dark-green: #063c28;
+  --color-shop-btn-dark-green: #063d29;
+  --color-shop-light-bg: #f6f6f6;
+  --color-shop-light-green: #3b9c3c;
+  --color-shop-orange: #fb6c08;
+  --color-dark-color: #151515;
+  --color-light-color: #52525b;
+  --color-light-orange: #fca99b;
+  --color-mango-yellow: #ffcc33;
+  --color-mango-green: #99cc33;
+  --color-dark-blue: #6c7fd8;
+  --color-shop-orange: #fb6c08;
+  --color-shop-lighter-bg: #f1f3f8;
+  --color-shop-light-text: #686e7d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+ 
+}
+body{
+   background-color: rgba(225, 217, 217, 0.633);
+}
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: #5A3E1B;
+  border-radius: 10px;
+}
+
+/* Scrollbar thumb (the moving part) */
+::-webkit-scrollbar-thumb {
+  background: #ffcc33;
+  border-radius: 10px;
+}
+
+/* Hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffcc33;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #ffcc33 #5A3E1B;
+}

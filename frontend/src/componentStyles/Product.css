@@ -1,0 +1,125 @@
+/* Link reset */
+.product_id {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* GRID LAYOUT */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+/* CENTER button inside card */
+.add-to-cart {
+  display: block;
+  margin: 0 auto;
+}
+
+.rating_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PRODUCT CARD */
+.product-card {
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-top: 10px;
+  background: rgba(161, 184, 107, 0.12);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(108, 216, 119, 0.25);
+  box-shadow: 0 10px 28px rgba(108, 216, 124, 0.223);
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+}
+
+/* IMAGE */
+.product-image-card {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px 8px 0 0;
+}
+
+/* DETAILS */
+.product-details {
+  padding: 1rem;
+}
+
+.product-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.home-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-main);
+}
+
+/* BUTTON */
+.add-to-cart {
+  background-color: #99cc33;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.add-to-cart:hover {
+  background-color: #063c28;
+  color: white;
+}
+
+/* -----------------------------------------
+   RESPONSIVE FIXES
+------------------------------------------ */
+
+/* Tablets — 3 cards per row */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile — 2 cards per row */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-image-card {
+    height: 150px;
+  }
+
+  .product-title {
+    font-size: 1rem;
+  }
+}
+
+/* Small Phones — 1 card per row */
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr; /* still 2 per row */
+    gap: 0.8rem;
+  }
+
+  .product-image-card {
+    height: 130px;
+  }
+}

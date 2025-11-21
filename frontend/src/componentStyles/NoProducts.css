@@ -1,0 +1,77 @@
+.no-product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  min-height: 320px;
+  text-align: center;
+  background: #f3f4f6; /* gray-100 */
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Fade-in title */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.6s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.no-product-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+/* Pulse text + loader */
+.pulse-loader {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #0d4d2c; /* shop btn dark green */
+  animation: pulse 1.6s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+  100% { transform: scale(1); }
+}
+
+.loader-icon {
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+/* Spin animation */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.no-product-desc {
+  font-size: 0.875rem;
+  color: #6b7280;
+  opacity: 0;
+  animation: fadeText 0.6s 0.4s forwards;
+}
+
+@keyframes fadeText {
+  to {
+    opacity: 1;
+  }
+}

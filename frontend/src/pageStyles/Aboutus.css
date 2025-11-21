@@ -1,0 +1,310 @@
+/* -------------------------------------- */
+/* 1. Global Section Styling */
+/* -------------------------------------- */
+
+.about-section {
+    width: 100%;
+    padding: 4rem 1rem; /* py-16 px-4 */
+    background-color: #ece7e7; /* gray-50 */
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .about-section {
+        padding: 6rem 2.5rem; /* md:py-24 md:px-10 */
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-section {
+        padding-left: 5rem; /* lg:px-20 */
+        padding-right: 5rem;
+    }
+}
+
+/* -------------------------------------- */
+/* 2. Top Section (Text & Image) */
+/* -------------------------------------- */
+
+.about-top-grid {
+    display: grid;
+    gap: 3rem; /* gap-12 */
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+    .about-top-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem; /* lg:gap-20 */
+    }
+    .about-image-wrapper {
+        order: 2; /* lg:order-2 */
+    }
+    .about-text-content {
+        order: 1; /* lg:order-1 */
+    }
+}
+
+/* Text Content */
+.about-story-subtitle {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 600; /* font-semibold */
+    text-transform: uppercase;
+    letter-spacing: 0.1em; /* tracking-widest */
+    color: #f59e0b; /* yellow-600 */
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.about-main-title {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 800; /* font-extrabold */
+    color: #1f2937; /* gray-900 */
+    line-height: 1.25; /* leading-tight */
+}
+
+@media (min-width: 768px) {
+    .about-main-title {
+        font-size: 3rem; /* md:text-5xl */
+    }
+    .hidden-md-inline {
+        display: inline;
+    }
+}
+
+.about-title-highlight {
+    color: #047857; /* emerald-700 */
+}
+
+.about-main-paragraph {
+    margin-top: 1.5rem; /* mt-6 */
+    font-size: 1.125rem; /* text-lg */
+    color: #374151; /* gray-700 */
+    line-height: 1.625; /* leading-relaxed */
+    border-left: 4px solid #f59e0b; /* yellow-600 */
+    padding-left: 1rem; /* pl-4 */
+}
+
+.about-secondary-paragraph {
+    margin-top: 1rem; /* mt-4 */
+    color: #4b5563; /* gray-600 */
+    line-height: 1.625;
+}
+
+/* Image Styling */
+.about-image-wrapper {
+    display: flex;
+    justify-content: center;
+    order: 1; /* order-1 on mobile */
+}
+
+.about-image-relative-container {
+    position: relative;
+    width: 100%;
+    max-width: 32rem; /* max-w-lg */
+}
+
+.about-image-background-overlay {
+    display: none;
+    position: absolute;
+    top: 1rem; /* top-4 */
+    left: 1rem; /* left-4 */
+    width: 100%;
+    height: 100%;
+    background-color: #fcd34d; /* yellow-400 */
+    opacity: 0.3;
+    border-radius: 1.5rem; /* rounded-3xl */
+    z-index: -1;
+}
+
+@media (min-width: 768px) {
+    .about-image-background-overlay {
+        display: block; /* hidden md:block */
+    }
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1.5rem; /* rounded-3xl */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* shadow-2xl */
+    transition: transform 500ms ease-in-out;
+}
+
+.about-image:hover {
+    transform: scale(1.02); /* hover:scale-[1.02] */
+}
+
+/* -------------------------------------- */
+/* 3. Feature Boxes */
+/* -------------------------------------- */
+
+.about-features-grid {
+    display: grid;
+    gap: 2rem; /* gap-8 */
+    margin-top: 4rem; /* mt-16 */
+}
+
+@media (min-width: 768px) {
+    .about-features-grid {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 6rem; /* md:mt-24 */
+    }
+}
+
+.feature-box {
+    padding: 2rem; /* p-8 */
+    background-color: #ffffff; /* bg-white */
+    border-radius: 1rem; /* rounded-2xl */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); /* shadow-xl */
+    transition: box-shadow 300ms ease, transform 300ms ease;
+    border-top-width: 4px;
+    border-top-style: solid;
+}
+
+.feature-box:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* hover:shadow-2xl */
+    transform: translateY(-0.25rem); /* hover:-translate-y-1 */
+}
+
+/* Specific Border Colors */
+.feature-box-1 { border-top-color: #10b981; /* emerald-500 */ }
+.feature-box-2 { border-top-color: #f59e0b; /* yellow-500 */ }
+.feature-box-3 { border-top-color: #6366f1; /* indigo-500 */ }
+
+/* Icon Wrapper Styles */
+.feature-icon-wrapper {
+    padding: 0.75rem; /* p-3 */
+    border-radius: 0.5rem; /* rounded-lg */
+    display: inline-block;
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+.feature-icon {
+    width: 2rem; /* w-8 h-8 */
+    height: 2rem;
+}
+
+/* Specific Icon Backgrounds */
+.icon-emerald { background-color: #d1fae5; /* emerald-100 */ }
+.icon-yellow { background-color: #fef3c7; /* yellow-100 */ }
+.icon-indigo { background-color: #e0e7ff; /* indigo-100 */ }
+
+/* Feature Text */
+.feature-title {
+    font-weight: 700; /* font-bold */
+    font-size: 1.25rem; /* text-xl */
+    color: #1f2937; /* gray-900 */
+}
+
+.feature-description {
+    margin-top: 0.75rem; /* mt-3 */
+    color: #4b5563; /* gray-600 */
+    font-size: 1rem; /* text-base */
+    line-height: 1.625;
+    text-align: justify;
+}
+
+.key-conditions-section {
+    max-width: 64rem; /* Limit width for readability (e.g., max-w-5xl) */
+    margin: 4rem auto 0 auto; /* Center section and add top margin */
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06); /* shadow-md */
+}
+
+.conditions-title {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700; /* font-bold */
+    color: #1f2937; /* gray-900 */
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e5e7eb; /* light gray line */
+    padding-bottom: 0.5rem;
+}
+
+.conditions-list {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1.25rem; /* Spacing between list items */
+}
+
+@media (min-width: 768px) {
+    .conditions-list {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on desktop */
+        column-gap: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .conditions-list {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens (if needed) */
+    }
+}
+
+.condition-item {
+    display: flex; /* For aligning marker and text */
+    align-items: flex-start;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #e5e7eb; /* Subtle separator line */
+}
+
+/* Remove border on last items to clean up look */
+.conditions-list > li:nth-last-child(-n+2) {
+    border-bottom: none;
+}
+@media (min-width: 768px) {
+    .conditions-list > li:nth-last-child(-n+2) {
+        border-bottom: 1px dashed #e5e7eb;
+    }
+    .conditions-list > li:nth-last-child(-n+1) {
+        border-bottom: none;
+    }
+}
+
+
+.condition-marker {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 800; /* font-extrabold */
+    color: #059669; /* emerald-600 */
+    margin-right: 0.75rem;
+    min-width: 1.5rem; /* Ensure numbers align correctly */
+}
+
+.condition-text {
+    font-size: 0.9375rem; /* slightly larger than text-sm */
+    color: #374151; /* gray-700 */
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* -------------------------------------- */
+/* 5. General Terms Link Footer (Styling from previous response) */
+/* -------------------------------------- */
+
+.about-footer {
+    margin-top: 4rem; 
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+.about-footer-text {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.about-tnc-link {
+    color: #047857;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 0.25rem;
+    transition: color 300ms ease;
+}
+
+.about-tnc-link:hover {
+    color: #059669;
+    text-decoration: underline;
+}

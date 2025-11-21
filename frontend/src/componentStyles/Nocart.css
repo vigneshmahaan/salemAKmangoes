@@ -1,0 +1,98 @@
+.empty-cart-wrapper {
+  padding: 40px 16px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-cart-container {
+  background: white;
+  padding: 32px;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Image container */
+.cart-image-wrapper {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 20px auto;
+  animation: cartBounce 5s infinite ease-in-out;
+}
+
+/* Main Image */
+.cart-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Floating icon */
+.floating-icon {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #063c28;
+  padding: 10px;
+  border-radius: 50%;
+  animation: floatAnim 3s infinite linear;
+}
+
+.floating-icon-inner {
+  color: white;
+}
+
+/* Text */
+.empty-cart-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.empty-cart-subtext {
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Button */
+.discover-btn {
+  margin-top: 2rem;
+  display: block;
+  background: #9c3 ;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s;
+  text-align: center;
+  width: 150px;
+}
+
+.discover-btn:hover {
+  background:#063c28;
+;
+  color: white;
+}
+
+/* Animations */
+
+@keyframes cartBounce {
+  0% { transform: scale(1) rotate(0deg); }
+  33% { transform: scale(1.05) rotate(5deg); }
+  66% { transform: scale(1.05) rotate(-5deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes floatAnim {
+  0% { transform: translate(0,0); }
+  25% { transform: translate(-6px,-4px); }
+  50% { transform: translate(6px,4px); }
+  100% { transform: translate(0,0); }
+}

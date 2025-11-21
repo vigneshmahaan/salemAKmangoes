@@ -1,0 +1,60 @@
+.banner-wrapper {
+  padding: 4rem 2.5rem;
+  background: #f7d9bc; /* shop-light-pink equivalent */
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+}
+
+.banner-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.banner-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.banner-btn {
+  background: rgba(4, 60, 32, 0.9); /* shop-dark-green with opacity */
+  color: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  width: 150px;
+  text-align: center;
+}
+
+.banner-btn:hover {
+  background: #043c20;
+  color: #fff;
+}
+
+/* Right Side Image */
+.banner-right img {
+  width: 24rem;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .banner-right img {
+    display: inline-flex;
+  }
+}
+
+/* Larger Screens */
+@media (min-width: 1024px) {
+  .banner-wrapper {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
