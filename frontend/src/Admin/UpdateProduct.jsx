@@ -192,7 +192,7 @@ function UpdateProduct() {
           <button className="update-product-submit-btn">
             {loading ? (
               <p className="flex items-center justify-center gap-5">
-                Adding Product <Loader2Icon className="animate-spin" />
+                Updating Product <Loader2Icon className="animate-spin" />
               </p>
             ) : (
               "Update"
