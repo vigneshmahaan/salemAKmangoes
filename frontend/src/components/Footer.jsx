@@ -47,7 +47,6 @@ function Footer() {
           </div>
           {/* Section2 */}
           <div className="footer-section social">
-            <h3>Follow me</h3>
             <div className="social-links">
               <a href="/contact-us" >
                 <p className="social-icon">Terms & Conditions</p>

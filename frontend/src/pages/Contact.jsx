@@ -17,17 +17,18 @@ const Contact = () => {
             <address>Salem AK Mangoes, Airport Road, Kamalapuram, Salem - 636309, Tamil Nadu, India</address>
             <p class="detail-label">Primary Contact</p>
             <p class="detail-value phone-value">📞 +91 63856 72895</p>
-
-            <h4 class="serif-heading">Terms and Conditions</h4>
+            <hr className="hr007"/>
+<br/>
+            <h6 class="serif-heading2">Terms and Conditions</h6>
             <p class="detail-value phone-value">We ensure transparent pricing and fair business practices for every mango purchase.</p>
 
-            <h4 class="serif-heading">Privacy Policy</h4>
+            <h6 class="serif-heading2">Privacy Policy</h6>
             <p class="detail-value phone-value">Your personal information is securely stored and used only to process your mango orders.</p>
 
-            <h4 class="serif-heading">Return and Refund Policy</h4>
+            <h6 class="serif-heading2">Return and Refund Policy</h6>
             <p class="detail-value phone-value">Refunds are provided only for damaged or spoiled mangoes reported on the day of delivery.</p>
 
-            <h4 class="serif-heading">Shipping Policy</h4>
+            <h6 class="serif-heading2">Shipping Policy</h6>
             <p class="detail-value phone-value">All mango orders are carefully packed and delivered fresh to your doorstep within the promised time.</p>
           </div>
 
