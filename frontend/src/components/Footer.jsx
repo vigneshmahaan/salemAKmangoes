@@ -49,16 +49,16 @@ function Footer() {
           <div className="footer-section social">
             <div className="social-links">
               <a href="/contact-us" >
-                <p className="social-icon">Terms & Conditions</p>
+                <p className="social-icon font-semibold ">Terms & Conditions</p>
               </a>
               <a href="/contact-us">
-                <p className="social-icon">Privacy Policy</p>
+                <p className="social-icon font-semibold">Privacy Policy</p>
               </a>
                <a href="/contact-us">
-                <p className="social-icon">Refund Policy</p>
+                <p className="social-icon font-semibold">Refund Policy</p>
               </a>
                <a href="/contact-us">
-                <p className="social-icon">Shipping Policy</p>
+                <p className="social-icon font-semibold">Shipping Policy</p>
               </a>
             </div>
           </div>

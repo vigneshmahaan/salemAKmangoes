@@ -1,131 +1,132 @@
 .footer {
-    background-color: #5A3E1B;
-    color: #f1f3f8;
-    padding:2rem;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
-    border-top: 1px solid black;
-    width: auto;
-  }
-  hr{
-color: white;
-  }
+  background-color: #5a3e1b;
+  color: #f1f3f8;
+  padding: 2rem;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid black;
+  width: auto;
+}
+hr {
+  color: white;
+}
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  max-width: auto;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-top: 8px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+
+  font-weight: 600;
+}
+
+.footer-section p {
+  font-size: 1rem;
+
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column; /* <-- Add this */
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.social-icon {
+  font-size: 15px;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  text-align: left;
+}
+
+.social-icon:hover {
+  color: #99cc33;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+
+  padding-top: 1.5rem;
+  border-top: 1px solid white;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 818px) {
   .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1.5rem;
-    max-width: auto;
-    margin: 0 auto;
-    padding: 0 1rem;
-    margin-top: 8px;
-  }
-  
-  .footer-section {
-    flex: 1;
-    min-width: 250px;
-  }
-  
-  .footer-section h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    
-    font-weight: 600;
-
-  }
-  
-  .footer-section p {
-    font-size: 1rem;
-    
-    line-height: 1.5;
-    margin-bottom: 0.8rem;
-  }
-  
-  .social {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .social-links {
-    display: flex;
-    gap: 0.5rem;
-  }
-  
-  .social-icon {
-    font-size: 15px;
-    color:white;
-    transition: transform 0.3s ease, color 0.3s ease;
-    text-decoration: none;
-    text-align: left;
-  }
-  
-  .social-icon:hover {
-    color: #99cc33;
-    transform: scale(1.1);
-  }
-  
-  .footer-bottom {
     text-align: center;
-    margin-top: 2rem;
-    font-size: 1rem;
-    
-    padding-top: 1.5rem;
-    border-top: 1px solid white;
-  }
-  
-  .footer-bottom p {
-    margin: 0;
-    font-weight: 400;
-  }
-  
-  @media (max-width: 818px) {
-    .footer-container {
-      flex-direction: column;
-      text-align: center;
-      padding: 0;
-    }
-  
-    .footer-section {
-      margin-bottom: 2rem;
-      width: 100%;
-    }
-  
-    .social-links {
-      justify-content: center;
-    }
-  
-    .social-icon {
-      font-size: 1.8rem;
-    }
-  }
-  .content{
-    text-align: justify;
-    padding-left: 15px;
+    padding: 0;
   }
 
-  @media (max-width: 949px) {
-    .footer-container {
-      flex-direction: column;
-      text-align: center;
-      padding: 0;
-    }
-  
-    .footer-section {
-      margin-bottom: 2rem;
-      width: 100%;
-    }
-  
-    .social-links {
-      justify-content: center;
-    }
-  
-    .social-icon {
-      font-size: 1.8rem;
-    }
+  .footer-section {
+    margin-bottom: 2rem;
+    width: 100%;
   }
-  .content{
-    text-align: justify;
-    padding-left: 15px;
+
+  .social-links {
+    justify-content: center;
   }
+
+  .social-icon {
+    font-size: 1.8rem;
+  }
+}
+.content {
+  text-align: justify;
+  padding-left: 15px;
+}
+
+@media (max-width: 949px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  .footer-section {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .social-icon {
+    font-size: 1.8rem;
+  }
+}
+.content {
+  text-align: justify;
+  padding-left: 15px;
+}

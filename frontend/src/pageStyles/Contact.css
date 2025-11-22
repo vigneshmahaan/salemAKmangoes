@@ -76,6 +76,15 @@
   color: #0f1717; /* Deep Charcoal for strong contrast */
 }
 
+.serif-heading2 {
+  font-family: 'Cormorant Garamond', serif; /* Elegant, classic serif font */
+  font-size: 20px;
+
+  margin-bottom: 20px;
+  font-weight: 00;
+  color: #0f1717; /* Deep Charcoal for strong contrast */
+}
+
 .contact-card-executive h3 {
   font-size: 24px;
   margin-bottom: 15px;
@@ -106,8 +115,8 @@ address {
 }
 
 .detail-value {
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 15px;
   color: #0f1717; /* Dark and clear for key details */
 }
 
