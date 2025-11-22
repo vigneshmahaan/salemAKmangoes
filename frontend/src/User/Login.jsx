@@ -38,6 +38,7 @@ function Login() {
   return (
    <div className="form-container container">
     <div className="form-content">
+    <h1 className='flex justify-center items-center font-bold'>Log in</h1>
         <form className='form' onSubmit={loginSubmit}>
             <div className="input-group">
                 <input type="email"  placeholder='Email' value={loginEmail} onChange={(e)=>setLoginEmail(e.target.value)}/>

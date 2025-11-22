@@ -11,17 +11,21 @@ import { refreshCartPrices } from "../features/cart/cartSlice";
 
 function Cart() {
   const { cartItems } = useSelector((state) => state.cart);
-  const totalQty = cartItems.reduce((acc, item) => acc + item.quantity, 0);
+const totalQty = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
-  // Shipping charges based on total quantity
-  const shippingCharges = totalQty > 7 ? 25 : 35;
+// Shipping charges per kg/item
+const shippingPerKg = totalQty > 7 ? 25 : 35;
 
-  // Subtotal (unchanged)
-  const subtotal = cartItems.reduce(
-    (acc, item) => acc + item.price * item.quantity,0);
+// Calculate total shipping = per kg * total quantity
+const shippingCharges = shippingPerKg * totalQty;
 
-  // Total amount
-  const total = subtotal + shippingCharges; // here tax and shipping to assign
+// Subtotal
+const subtotal = cartItems.reduce(
+  (acc, item) => acc + item.price * item.quantity, 0
+);
+
+// Total amount
+const total = subtotal + shippingCharges;
   const navigate = useNavigate();
   const checkoutHandler = () => {
     navigate(`/login?redirect=/shipping`);
