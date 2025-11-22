@@ -36,8 +36,10 @@ function Login() {
     }
    },[dispatch,success])
   return (
-   <div className="form-container container">
+    <>
     <h1 className='flex justify-center items-center font-bold'>Log in</h1>
+   <div className="form-container container">
+    
     <div className="form-content">
     
         <form className='form' onSubmit={loginSubmit}>
@@ -53,6 +55,7 @@ function Login() {
         </form>
     </div>
    </div>
+   </>
   )
 }
 
