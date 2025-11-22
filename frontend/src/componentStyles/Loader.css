@@ -8,7 +8,7 @@
 
   .loader {
     border: 10px solid rgba(255, 255, 255, 0.3);
-    border-top: 4px solid var(--primary-main, #6C5B7B); 
+    border-top: 4px solid #99cc33; 
     border-radius: 50%;
     width: 80px; 
     height: 80px; 
