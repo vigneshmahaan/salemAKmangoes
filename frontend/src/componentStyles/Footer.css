@@ -29,21 +29,21 @@ color: white;
   .footer-section h3 {
     font-size: 1.4rem;
     margin-bottom: 1rem;
-    color: var(--text-primary);
+    
     font-weight: 600;
 
   }
   
   .footer-section p {
     font-size: 1rem;
-    color: var(--text-secondary);
+    
     line-height: 1.5;
     margin-bottom: 0.8rem;
   }
   
   .social {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 0.5rem;
   }
@@ -55,12 +55,14 @@ color: white;
   
   .social-icon {
     font-size: 2rem;
-    color: var(--text-light);
+    color:white;
     transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    text-align: left;
   }
   
   .social-icon:hover {
-    color: var(--primary-main);
+    color: #99cc33;
     transform: scale(1.1);
   }
   

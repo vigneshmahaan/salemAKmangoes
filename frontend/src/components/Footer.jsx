@@ -49,11 +49,17 @@ function Footer() {
           <div className="footer-section social">
             <h3>Follow me</h3>
             <div className="social-links">
-              <a href="/" >
-                <YouTube className="social-icon" />
+              <a href="/contact-us" >
+                <p className="social-icon">Terms & Conditions</p>
               </a>
-              <a href="/">
-                <Instagram className="social-icon" />
+              <a href="/contact-us">
+                <p className="social-icon">Privacy Policy</p>
+              </a>
+               <a href="/contact-us">
+                <p className="social-icon">Refund Policy</p>
+              </a>
+               <a href="/contact-us">
+                <p className="social-icon">Shipping Policy</p>
               </a>
             </div>
           </div>
