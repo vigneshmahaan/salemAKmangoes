@@ -21,7 +21,7 @@ function Cart() {
     (acc, item) => acc + item.price * item.quantity,0);
 
   // Total amount
-  const total = subtotal + shippingCharges; // here tax and shipping to assign
+  const total = subtotal + (shippingCharges*item.quantity); // here tax and shipping to assign
   const navigate = useNavigate();
   const checkoutHandler = () => {
     navigate(`/login?redirect=/shipping`);
