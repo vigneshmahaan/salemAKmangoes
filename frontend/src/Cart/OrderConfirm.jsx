@@ -16,7 +16,7 @@ function OrderConfirm() {
     0
   );
   const shippingCharges = cartItems.quantity >= 7 ? 25 : 35;
-  const total = subtotal + (shippingCharges*item.quantity); // here tax and shipping to assign
+  const total = subtotal + shippingCharges; // here tax and shipping to assign
   const navigate = useNavigate();
   const proceedToPayment = () => {
     const data = {
