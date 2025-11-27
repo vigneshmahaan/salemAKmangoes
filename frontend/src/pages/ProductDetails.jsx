@@ -190,7 +190,7 @@ function ProductDetails() {
                 className={
                   product.stock > 3 ? (
                     <h6 className="text-green-600">In Stock</h6>
-                  ) : product.stock > 0 ? (
+                  ) : product.stock >= 0 ? (
                     <h6 className="text-red-600">Out of Stock</h6>
                   ) : (
                     <h6 className="text-red-600">Season Over</h6>
