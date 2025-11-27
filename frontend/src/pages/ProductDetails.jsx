@@ -197,11 +197,15 @@ function ProductDetails() {
                   )
                 }
               >
-                {product.stock > 3 ? (
-                  `In Stock (available)`
-                ) : (
-                  <h6 className="text-red-600">Season over</h6>
-                )}
+                {
+                  product.stock > 3 ? (
+                    <h6 className="text-green-600">In Stock</h6>
+                  ) : product.stock >= 0 ? (
+                    <h6 className="text-red-600">Out of Stock</h6>
+                  ) : (
+                    <h6 className="text-red-600">Season Over</h6>
+                  )
+                }
               </span>
             </div>
             <p className="text-gray-600 text-sm">Minimum 3kg</p>
